@@ -1,23 +1,39 @@
 20 August 2014, Task 02 Requirements
 ====================================
+## 1. Review of forking, cloning and committing repository.
+  1. Go to https://github.com/sunil-pandey/frontendproject
+  2. Login to Git
+  3. Click on Fork
+  4. Go to https://github.com/sunilypandey (sunilypandey is demo participants for demo purposes)
+  5. See the forked folder has been copied here
+  6. Go to frontendproject
+  7. Copy the URL to clipboard
+  8. Open a command window and go to the folder when the git repository is to be cloned.
+  9. git clone <URL from clipboard>
+  10. Create final folder.
+  11. Inside final folder, create a file of zero size (touch a file).
+  12. git add final
+  13. git commit -m "final folder created"
+  14. git push
+  15. Refresh page in browser
+  16. See that final folder is added
 
-## 1. Make the original repository upstream remote for your local
+## 2. Features of README.md
 
-  cd projects  
-  git clone https://github.com/tushardemo/frontendninja  
-  (tushardemo is demo participants for demo purposes)  
-  cd frontendninja  
+## 3. Make the original repository upstream remote for your local
+
+  Go to frontendproject  
 
   One time setting:  
-  cd frontendninja  
-  git remote add upstream https://github.com/tusharvjoshi/frontendninja  
+  cd frontendproject  
+  git remote add upstream https://github.com/sunil-pandey/frontendproject  
 
-  To get updates from the source repository of tusharvjoshi  
+  To get updates from the source repository of sunil-pandey  
   git fetch upstream  
   git merge upstream/master master  
   git push  
 
-## 2. Use bootstrap 3 and make grid layout
+## 4. Use bootstrap 3 and make grid layout
 
   Understand the working of Bootstrap 3 grids  
   http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works  
@@ -66,7 +82,7 @@
 
   Commit your index.html back to your repository.  
 
-## 3. Getting familiar with npm
+## 5. Getting familiar with npm
 
   mkdir npmtest  
   cd npmtest  
@@ -76,42 +92,46 @@
   &gt; description: first npm init ENTER  
   &gt; entry point: (index.js) ENTER  
   &gt; test command: ENTER  
-  &gt; git repository: https://github.com/tushardemo/frontendninja ENTER  
+  &gt; git repository: https://github.com/sunil-pandey/frontendproject ENTER  
   &gt; keywords: ENTER  
   &gt; license: (ISC) MIT ENTER  
   &gt; Is this ok? (yes) ENTER  
 
   Check created package.json file and it shall look like below:  
 
-  {  
-    "name": "npmtest",  
-    "version": "0.0.0",  
-    "description": "first npm init",  
-    "main": "index.js",  
-    "scripts": {  
-      "test": "echo \"Error: no test specified\" && exit 1"  
-    },  
-    "repository": {  
-      "type": "git",  
-      "url": "https://github.com/tushardemo/frontendninja"  
-    },  
-    "author": "'Tushar",  
-    "license": "MIT",  
-    "bugs": {  
-      "url": "https://github.com/tushardemo/frontendninja/issues"  
-    },  
-    "homepage": "https://github.com/tushardemo/frontendninja"  
-  }  
+   <pre><code>
+   {
+      "name": "npmtest",
+      "version": "0.0.0",
+      "description": "first npm init",
+      "main": "index.js",
+      "scripts": {
+         "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+         "type": "git",
+         "url": "https://github.com/sunil-pandey/frontendproject"
+      },
+      "author": "'Tushar",
+      "license": "MIT",
+      "bugs": {
+         "url": "https://github.com/sunil-pandey/frontendproject/issues"
+      },
+      "homepage": "https://github.com/sunil-pandey/frontendproject"
+   }
+   </code></pre>
 
   - Create spec folder  
   mkdir spec  
   - Create test.js file in spec folder with the following content:  
 
+  <pre><code>
   describe("A suite", function() {  
     it("contains spec with an expectation", function() {  
       expect(true).toBe(true);  
     });  
-  });  
+  });
+  </code></pre>
 
   - Install gulp globally  
   npm install -g gulp  
