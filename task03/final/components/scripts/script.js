@@ -5,5 +5,5 @@ process = function() {
 };
 
 $(function() {
-  return $('h1').append('Hello There');
+  return $('h1').append('!');
 });

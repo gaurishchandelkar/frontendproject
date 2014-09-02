@@ -1,3 +1,91 @@
-h1 {
-  color: #0000ff;
+/* define variables*/
+/* define styles for different sections */
+.fonts {
+  font-family: sans-serif;
+}
+.heading {
+  color: #808080;
+  font-family: sans-serif;
+}
+.text {
+  color: #808080;
+  font-family: sans-serif;
+}
+.whitelink a:link,
+.whitelink a:visited,
+.whitelink a:hover,
+.whitelink a:active {
+  color: #ffffff;
+}
+body {
+  background-color: #d3d3d3;
+}
+.container {
+  background-color: #ffffff;
+}
+.banner {
+  background-color: #4682b4;
+  color: white;
+}
+.menu {
+  background-color: #00008b;
+  color: #ffffff;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline;
+  float: left;
+}
+.menu ul li a {
+  display: block;
+  width: 150px;
+}
+.menu ul li a:link,
+.menu ul li a:visited,
+.menu ul li a:hover,
+.menu ul li a:active {
+  color: #ffffff;
+}
+/* asign styles based on identifiers */
+h2,
+h3,
+h4 {
+  color: #808080;
+  font-family: sans-serif;
+}
+p {
+  color: #808080;
+  font-family: sans-serif;
+}
+.navigation {
+  background-color: #00008b;
+  color: #ffffff;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li {
+  display: inline;
+  float: left;
+}
+.navigation ul li a {
+  display: block;
+  width: 150px;
+}
+.navigation ul li a:link,
+.navigation ul li a:visited,
+.navigation ul li a:hover,
+.navigation ul li a:active {
+  color: #ffffff;
+}
+div.banner,
+div.navigation {
+  margin-left: -100px;
+  margin-right: -100px;
 }

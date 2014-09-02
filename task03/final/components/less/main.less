@@ -1,7 +1,89 @@
-@primary-color: blue;
+/* define variables*/
+@heading-color: grey;
+@text-color: grey;
+@all-font: sans-serif;
+@menu-background: darkblue;
+@menu-text-color: white;
+@banner-background: steelblue;
+@body-background: lightgrey;
+@container-background:white;
 
+/* define styles for different sections */
+.fonts {
+    font-family: @all-font
+}
 
-
-h1 {
-    color: @primary-color
+.heading {
+    color: @heading-color;
+    .fonts
   }
+
+.text {
+    color: @text-color;
+    .fonts
+}
+
+.whitelink
+{
+    a:link, a:visited, a:hover, a:active {
+        color: white
+    }
+}
+
+body
+{
+    background-color:@body-background;
+}
+
+.container
+{
+    background-color:@container-background;
+}
+
+
+
+.banner
+{
+    background-color:@banner-background;
+    color:white;
+}
+
+.menu
+{
+    background-color:@menu-background ;
+    color: @menu-text-color;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+            float: left;
+            a {
+                display: block;
+                width: 150px;
+            }
+            .whitelink
+        }
+    }
+}
+
+
+/* asign styles based on identifiers */
+h2, h3, h4 {
+    .heading
+  }
+
+p {
+    .text
+}
+
+.navigation {
+    .menu
+}
+
+div.banner, div.navigation
+{
+    margin-left:-100px;
+    margin-right:-100px;
+}

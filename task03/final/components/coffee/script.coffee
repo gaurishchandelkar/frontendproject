@@ -4,4 +4,4 @@ process = ->
 
 
 $ ->
-    $('h1').append('Hello There')
+    $('h1').append('!')
